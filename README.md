@@ -32,7 +32,7 @@ Spatial analytics and data processing
 Weather data integration
 Demographics and point-of-interest data
 
-## Key Features:
+## Key Features
 
 RESTful APIs and SDKs for web, mobile, and desktop platforms
 Integration with other Azure services like IoT Hub and Power BI
@@ -40,7 +40,7 @@ GDPR compliance and enterprise security features
 Global coverage with localized data for many regions
 Flexible pricing with pay-as-you-use model
 
-## Common Use Cases:
+## Common Use Cases
 
 Fleet management and logistics optimization
 Store locators and proximity searches
@@ -50,3 +50,5 @@ Emergency services and public safety applications
 
 
 https://azure.microsoft.com/en-us/products/azure-maps
+
+01/09/2025
