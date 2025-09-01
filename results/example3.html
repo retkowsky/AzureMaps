@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_efd2345c343cf0f86d6cd9bf3d6dc52d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_efd2345c343cf0f86d6cd9bf3d6dc52d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_efd2345c343cf0f86d6cd9bf3d6dc52d = L.map(
+                "map_efd2345c343cf0f86d6cd9bf3d6dc52d",
+                {
+                    center: [48.834032, 2.2655777],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_18ecb0e733e7ba6a46e03696f5573473 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_18ecb0e733e7ba6a46e03696f5573473.addTo(map_efd2345c343cf0f86d6cd9bf3d6dc52d);
+        
+    
+            var tile_layer_9b6d9d84fb8d7d04f592df3627d4ef83 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9b6d9d84fb8d7d04f592df3627d4ef83.addTo(map_efd2345c343cf0f86d6cd9bf3d6dc52d);
+        
+    
+            var tile_layer_43b009bae2eb553c8dbb46239df33ba4 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_43b009bae2eb553c8dbb46239df33ba4.addTo(map_efd2345c343cf0f86d6cd9bf3d6dc52d);
+        
+    
+            var layer_control_e3d2c04f9621a48eb9309d2b88229794_layers = {
+                base_layers : {
+                    "esriworldimagery" : tile_layer_43b009bae2eb553c8dbb46239df33ba4,
+                    "openstreetmap" : tile_layer_9b6d9d84fb8d7d04f592df3627d4ef83,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_e3d2c04f9621a48eb9309d2b88229794 = L.control.layers(
+                layer_control_e3d2c04f9621a48eb9309d2b88229794_layers.base_layers,
+                layer_control_e3d2c04f9621a48eb9309d2b88229794_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_efd2345c343cf0f86d6cd9bf3d6dc52d);
+
+        
+    
+            var marker_e521646dbf3298127abbf59f66641eb7 = L.marker(
+                [48.834032, 2.2655777],
+                {
+}
+            ).addTo(map_efd2345c343cf0f86d6cd9bf3d6dc52d);
+        
+    
+        var popup_1987fd15ca6f057341ed7377d7feef59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51b8b80d264130b03cbdd2a9d5059915 = $(`<div id="html_51b8b80d264130b03cbdd2a9d5059915" style="width: 100.0%; height: 100.0%;">39 Quai du Président Roosevelt, 92130 Issy-les-Moulineaux, France</div>`)[0];
+                popup_1987fd15ca6f057341ed7377d7feef59.setContent(html_51b8b80d264130b03cbdd2a9d5059915);
+            
+        
+
+        marker_e521646dbf3298127abbf59f66641eb7.bindPopup(popup_1987fd15ca6f057341ed7377d7feef59)
+        ;
+
+        
+    
+</script>
+</html>
