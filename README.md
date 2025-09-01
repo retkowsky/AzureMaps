@@ -47,3 +47,6 @@ Store locators and proximity searches
 Asset tracking and monitoring
 Location-based marketing and analytics
 Emergency services and public safety applications
+
+
+https://azure.microsoft.com/en-us/products/azure-maps
