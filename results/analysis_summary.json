@@ -1,0 +1,19 @@
+{
+  "total_businesses": 150,
+  "business_types": {
+    "retail": "24",
+    "manufacturing": "23",
+    "service": "22",
+    "education": "18",
+    "restaurant": "18",
+    "entertainment": "17",
+    "office": "16",
+    "healthcare": "12"
+  },
+  "clusters_found": 14,
+  "optimal_facilities": 4,
+  "avg_revenue": 5022520.98,
+  "avg_employees": 266.8933333333333,
+  "avg_rating": 4.022666666666667,
+  "high_growth_businesses": 0
+}

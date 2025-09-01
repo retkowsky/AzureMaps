@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_46f2c9f90a721a24b765854775755f3d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_46f2c9f90a721a24b765854775755f3d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_46f2c9f90a721a24b765854775755f3d = L.map(
+                "map_46f2c9f90a721a24b765854775755f3d",
+                {
+                    center: [47.5, -122.2],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9d7dc91fb0abce7c58900ada3526976a = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u00a9 Esri \u2014 Source: Esri, USGS, NOAA",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9d7dc91fb0abce7c58900ada3526976a.addTo(map_46f2c9f90a721a24b765854775755f3d);
+        
+    
+            var marker_46413137a6653a14c3c115f82f125d1c = L.marker(
+                [47.5323701424, -122.1959858346],
+                {
+}
+            ).addTo(map_46f2c9f90a721a24b765854775755f3d);
+        
+    
+            var icon_6e5e865e357507d66201f13058f723f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec7d983142b2db48b0374f7a48bff179 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce0619d38b6fff4062642fb152bedead = $(`<div id="html_ce0619d38b6fff4062642fb152bedead" style="width: 100.0%; height: 100.0%;"><b>NE 44th St</b><br>Roadworks NE 44th St<br>Severity: 0</div>`)[0];
+                popup_ec7d983142b2db48b0374f7a48bff179.setContent(html_ce0619d38b6fff4062642fb152bedead);
+            
+        
+
+        marker_46413137a6653a14c3c115f82f125d1c.bindPopup(popup_ec7d983142b2db48b0374f7a48bff179)
+        ;
+
+        
+    
+    
+                marker_46413137a6653a14c3c115f82f125d1c.setIcon(icon_6e5e865e357507d66201f13058f723f1);
+            
+    
+            var marker_a1ed7cb0213b11c0a8b430e7426ac87f = L.marker(
+                [47.5337581657, -122.1957860101],
+                {
+}
+            ).addTo(map_46f2c9f90a721a24b765854775755f3d);
+        
+    
+            var icon_4a589ad6b399e3c7de795c2f15f48346 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74270de094d37700f07cfe489f9a5893 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_edf6e0e616272ec552eab98d8be86661 = $(`<div id="html_edf6e0e616272ec552eab98d8be86661" style="width: 100.0%; height: 100.0%;"><b>112th Ave/SE 64th St (Lake Washington Ramp)</b><br>Roadworks 112th Ave/SE 64th St (Lake Washington Ramp)<br>Severity: 0</div>`)[0];
+                popup_74270de094d37700f07cfe489f9a5893.setContent(html_edf6e0e616272ec552eab98d8be86661);
+            
+        
+
+        marker_a1ed7cb0213b11c0a8b430e7426ac87f.bindPopup(popup_74270de094d37700f07cfe489f9a5893)
+        ;
+
+        
+    
+    
+                marker_a1ed7cb0213b11c0a8b430e7426ac87f.setIcon(icon_4a589ad6b399e3c7de795c2f15f48346);
+            
+    
+            var marker_c910f135e5b89242fe4c23b5ea8c8130 = L.marker(
+                [47.4835968126, -122.195362221],
+                {
+}
+            ).addTo(map_46f2c9f90a721a24b765854775755f3d);
+        
+    
+            var icon_22c79eb80ed6271b7464934a5f406f85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4182e73d102cd5352454bbd2f3f83b31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2eb152793f1fa4434c836a115aeb85b = $(`<div id="html_d2eb152793f1fa4434c836a115aeb85b" style="width: 100.0%; height: 100.0%;"><b>SE Maple Valley Hwy</b><br>Roadworks SE Maple Valley Hwy<br>Severity: 0</div>`)[0];
+                popup_4182e73d102cd5352454bbd2f3f83b31.setContent(html_d2eb152793f1fa4434c836a115aeb85b);
+            
+        
+
+        marker_c910f135e5b89242fe4c23b5ea8c8130.bindPopup(popup_4182e73d102cd5352454bbd2f3f83b31)
+        ;
+
+        
+    
+    
+                marker_c910f135e5b89242fe4c23b5ea8c8130.setIcon(icon_22c79eb80ed6271b7464934a5f406f85);
+            
+    
+            var marker_489d3837c7250cfd7ad9d9e6cb6f9cb8 = L.marker(
+                [47.553505914, -122.1925083506],
+                {
+}
+            ).addTo(map_46f2c9f90a721a24b765854775755f3d);
+        
+    
+            var icon_0059a9114e57c0b2810e6041e4e0e70d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd67174016eeafc8c6a01e766b228e94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb1d08705390afb5ad034311fbe89bb8 = $(`<div id="html_cb1d08705390afb5ad034311fbe89bb8" style="width: 100.0%; height: 100.0%;"><b>44th St/Exit 7 (I-405)</b><br>Roadworks 44th St/Exit 7 (I-405)<br>Severity: 0</div>`)[0];
+                popup_cd67174016eeafc8c6a01e766b228e94.setContent(html_cb1d08705390afb5ad034311fbe89bb8);
+            
+        
+
+        marker_489d3837c7250cfd7ad9d9e6cb6f9cb8.bindPopup(popup_cd67174016eeafc8c6a01e766b228e94)
+        ;
+
+        
+    
+    
+                marker_489d3837c7250cfd7ad9d9e6cb6f9cb8.setIcon(icon_0059a9114e57c0b2810e6041e4e0e70d);
+            
+</script>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_39b5d1b76fdf882651f54ae350f623d6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_39b5d1b76fdf882651f54ae350f623d6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_39b5d1b76fdf882651f54ae350f623d6 = L.map(
+                "map_39b5d1b76fdf882651f54ae350f623d6",
+                {
+                    center: [47.5, -122.2],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_00f2961fddeeb3bf35ba39d34aafa5ce = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_00f2961fddeeb3bf35ba39d34aafa5ce.addTo(map_39b5d1b76fdf882651f54ae350f623d6);
+        
+    
+            var marker_f32b029ff92f822e6cc45abb28d8e929 = L.marker(
+                [47.5323701424, -122.1959858346],
+                {
+}
+            ).addTo(map_39b5d1b76fdf882651f54ae350f623d6);
+        
+    
+            var icon_8295484e063c9efeca3f37c6adea5f64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_489cdd4ae60d8f8ac790ffda4973941c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cae8d4085f1f412e294c7572a44be1a = $(`<div id="html_5cae8d4085f1f412e294c7572a44be1a" style="width: 100.0%; height: 100.0%;">NE 44th St<br>Roadworks NE 44th St<br>Severity: 0</div>`)[0];
+                popup_489cdd4ae60d8f8ac790ffda4973941c.setContent(html_5cae8d4085f1f412e294c7572a44be1a);
+            
+        
+
+        marker_f32b029ff92f822e6cc45abb28d8e929.bindPopup(popup_489cdd4ae60d8f8ac790ffda4973941c)
+        ;
+
+        
+    
+    
+                marker_f32b029ff92f822e6cc45abb28d8e929.setIcon(icon_8295484e063c9efeca3f37c6adea5f64);
+            
+    
+            var marker_e0739792f860084a19502d056756cd6f = L.marker(
+                [47.5337581657, -122.1957860101],
+                {
+}
+            ).addTo(map_39b5d1b76fdf882651f54ae350f623d6);
+        
+    
+            var icon_8f280d6cc48b280718d004c5cda21dbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2df4f17c70a8262d171eeb46f504355d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_848dbd9a4e928af9328a88695cd70682 = $(`<div id="html_848dbd9a4e928af9328a88695cd70682" style="width: 100.0%; height: 100.0%;">112th Ave/SE 64th St (Lake Washington Ramp)<br>Roadworks 112th Ave/SE 64th St (Lake Washington Ramp)<br>Severity: 0</div>`)[0];
+                popup_2df4f17c70a8262d171eeb46f504355d.setContent(html_848dbd9a4e928af9328a88695cd70682);
+            
+        
+
+        marker_e0739792f860084a19502d056756cd6f.bindPopup(popup_2df4f17c70a8262d171eeb46f504355d)
+        ;
+
+        
+    
+    
+                marker_e0739792f860084a19502d056756cd6f.setIcon(icon_8f280d6cc48b280718d004c5cda21dbd);
+            
+    
+            var marker_968bef6c59c875b14c37ad033c48a870 = L.marker(
+                [47.4835968126, -122.195362221],
+                {
+}
+            ).addTo(map_39b5d1b76fdf882651f54ae350f623d6);
+        
+    
+            var icon_0a6d9180e5412cdac6546be26f5c50c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b1bf2e0d296b6879314f6eb868d8313 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad92ef78b5ae9667c135ebcc65539d69 = $(`<div id="html_ad92ef78b5ae9667c135ebcc65539d69" style="width: 100.0%; height: 100.0%;">SE Maple Valley Hwy<br>Roadworks SE Maple Valley Hwy<br>Severity: 0</div>`)[0];
+                popup_7b1bf2e0d296b6879314f6eb868d8313.setContent(html_ad92ef78b5ae9667c135ebcc65539d69);
+            
+        
+
+        marker_968bef6c59c875b14c37ad033c48a870.bindPopup(popup_7b1bf2e0d296b6879314f6eb868d8313)
+        ;
+
+        
+    
+    
+                marker_968bef6c59c875b14c37ad033c48a870.setIcon(icon_0a6d9180e5412cdac6546be26f5c50c1);
+            
+    
+            var marker_16178f6d18d102297773db1b57b39c3c = L.marker(
+                [47.553505914, -122.1925083506],
+                {
+}
+            ).addTo(map_39b5d1b76fdf882651f54ae350f623d6);
+        
+    
+            var icon_81be2a08011c0b5fca7475f95f4a5494 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ed219486c7ad832b73e245d2ebf263e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d01dce53c77db7777783bbf01a52a04f = $(`<div id="html_d01dce53c77db7777783bbf01a52a04f" style="width: 100.0%; height: 100.0%;">44th St/Exit 7 (I-405)<br>Roadworks 44th St/Exit 7 (I-405)<br>Severity: 0</div>`)[0];
+                popup_4ed219486c7ad832b73e245d2ebf263e.setContent(html_d01dce53c77db7777783bbf01a52a04f);
+            
+        
+
+        marker_16178f6d18d102297773db1b57b39c3c.bindPopup(popup_4ed219486c7ad832b73e245d2ebf263e)
+        ;
+
+        
+    
+    
+                marker_16178f6d18d102297773db1b57b39c3c.setIcon(icon_81be2a08011c0b5fca7475f95f4a5494);
+            
+</script>
+</html>

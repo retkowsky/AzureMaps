@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_901e2e73e6334ad1f9c5cb3646f49da7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_901e2e73e6334ad1f9c5cb3646f49da7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_901e2e73e6334ad1f9c5cb3646f49da7 = L.map(
+                "map_901e2e73e6334ad1f9c5cb3646f49da7",
+                {
+                    center: [51.5074, -0.1278],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0b59bd7acc9c6f99a2facca567a5f314 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0b59bd7acc9c6f99a2facca567a5f314.addTo(map_901e2e73e6334ad1f9c5cb3646f49da7);
+        
+    
+            var marker_04c27f7723bdcafec054ae82829db1c3 = L.marker(
+                [51.5045, -0.0865],
+                {
+}
+            ).addTo(map_901e2e73e6334ad1f9c5cb3646f49da7);
+        
+    
+            var icon_99c5e202c29dcd347fa5a17357ea498a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a7124fdd37ee209552bdc670eaec82e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ab4b33524f03c9fa1f96f9a9539c2033 = $(`<div id="html_ab4b33524f03c9fa1f96f9a9539c2033" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="color: green; margin-bottom: 5px;">The Shard</h4>             <p><strong>Category:</strong> Attraction</p>             <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>             <p><strong>Address:</strong> 32 London Bridge St</p>         </div>         </div>`)[0];
+                popup_0a7124fdd37ee209552bdc670eaec82e.setContent(html_ab4b33524f03c9fa1f96f9a9539c2033);
+            
+        
+
+        marker_04c27f7723bdcafec054ae82829db1c3.bindPopup(popup_0a7124fdd37ee209552bdc670eaec82e)
+        ;
+
+        
+    
+    
+            marker_04c27f7723bdcafec054ae82829db1c3.bindTooltip(
+                `<div>
+                     The Shard
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_04c27f7723bdcafec054ae82829db1c3.setIcon(icon_99c5e202c29dcd347fa5a17357ea498a);
+            
+    
+            var marker_c99ecd6bcc8b87dba67dfd79975235ad = L.marker(
+                [51.4994, -0.163],
+                {
+}
+            ).addTo(map_901e2e73e6334ad1f9c5cb3646f49da7);
+        
+    
+            var icon_82d3495d43681bc27c9a5bde3a0d7423 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99be5a2dd9148bcd6691c108eb92adf7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d3fc92ee74083157309b5bc270307d52 = $(`<div id="html_d3fc92ee74083157309b5bc270307d52" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="color: orange; margin-bottom: 5px;">Harrods</h4>             <p><strong>Category:</strong> Shopping</p>             <p><strong>Rating:</strong> ⭐⭐⭐⭐</p>             <p><strong>Address:</strong> 87-135 Brompton Rd</p>         </div>         </div>`)[0];
+                popup_99be5a2dd9148bcd6691c108eb92adf7.setContent(html_d3fc92ee74083157309b5bc270307d52);
+            
+        
+
+        marker_c99ecd6bcc8b87dba67dfd79975235ad.bindPopup(popup_99be5a2dd9148bcd6691c108eb92adf7)
+        ;
+
+        
+    
+    
+            marker_c99ecd6bcc8b87dba67dfd79975235ad.bindTooltip(
+                `<div>
+                     Harrods
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c99ecd6bcc8b87dba67dfd79975235ad.setIcon(icon_82d3495d43681bc27c9a5bde3a0d7423);
+            
+    
+            var marker_1f526937126d137255c4650f75f5a3a8 = L.marker(
+                [51.5074, -0.1419],
+                {
+}
+            ).addTo(map_901e2e73e6334ad1f9c5cb3646f49da7);
+        
+    
+            var icon_d9c4b92aff6c6f70956372046e110dcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bed",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1ec83089c1762e6b00110a1aeec63850 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_425cbe2ead30b70828eac52642d4d66b = $(`<div id="html_425cbe2ead30b70828eac52642d4d66b" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="color: blue; margin-bottom: 5px;">The Ritz London</h4>             <p><strong>Category:</strong> Hotel</p>             <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>             <p><strong>Address:</strong> 150 Piccadilly</p>         </div>         </div>`)[0];
+                popup_1ec83089c1762e6b00110a1aeec63850.setContent(html_425cbe2ead30b70828eac52642d4d66b);
+            
+        
+
+        marker_1f526937126d137255c4650f75f5a3a8.bindPopup(popup_1ec83089c1762e6b00110a1aeec63850)
+        ;
+
+        
+    
+    
+            marker_1f526937126d137255c4650f75f5a3a8.bindTooltip(
+                `<div>
+                     The Ritz London
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f526937126d137255c4650f75f5a3a8.setIcon(icon_d9c4b92aff6c6f70956372046e110dcf);
+            
+    
+            var marker_5072640e7bfb404ee6e9db0974452e3b = L.marker(
+                [51.5144, -0.1419],
+                {
+}
+            ).addTo(map_901e2e73e6334ad1f9c5cb3646f49da7);
+        
+    
+            var icon_90ec7868a92ffe9d2d7e6bb5ba4769a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cutlery",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a470d3be86b99a1d109380d9a3a868f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c827e7e84afe1bd379ec661551285680 = $(`<div id="html_c827e7e84afe1bd379ec661551285680" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="color: red; margin-bottom: 5px;">Dishoom</h4>             <p><strong>Category:</strong> Restaurant</p>             <p><strong>Rating:</strong> ⭐⭐⭐⭐</p>             <p><strong>Address:</strong> 12 Upper St Martin's Ln</p>         </div>         </div>`)[0];
+                popup_7a470d3be86b99a1d109380d9a3a868f.setContent(html_c827e7e84afe1bd379ec661551285680);
+            
+        
+
+        marker_5072640e7bfb404ee6e9db0974452e3b.bindPopup(popup_7a470d3be86b99a1d109380d9a3a868f)
+        ;
+
+        
+    
+    
+            marker_5072640e7bfb404ee6e9db0974452e3b.bindTooltip(
+                `<div>
+                     Dishoom
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5072640e7bfb404ee6e9db0974452e3b.setIcon(icon_90ec7868a92ffe9d2d7e6bb5ba4769a7);
+            
+    
+            var marker_4f7b1c579de9db2c436d607d55c9c3f3 = L.marker(
+                [51.5308, -0.1238],
+                {
+}
+            ).addTo(map_901e2e73e6334ad1f9c5cb3646f49da7);
+        
+    
+            var icon_daa25d827fdf2ef1df2f68e3ca1b7ebf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef1a0b0d87037d1d4d354e55a45e87b1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6378c6298040f02ca89857ff1d9ba731 = $(`<div id="html_6378c6298040f02ca89857ff1d9ba731" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 200px;">             <h4 style="color: purple; margin-bottom: 5px;">King's Cross Station</h4>             <p><strong>Category:</strong> Transport</p>             <p><strong>Rating:</strong> ⭐⭐⭐</p>             <p><strong>Address:</strong> Euston Rd</p>         </div>         </div>`)[0];
+                popup_ef1a0b0d87037d1d4d354e55a45e87b1.setContent(html_6378c6298040f02ca89857ff1d9ba731);
+            
+        
+
+        marker_4f7b1c579de9db2c436d607d55c9c3f3.bindPopup(popup_ef1a0b0d87037d1d4d354e55a45e87b1)
+        ;
+
+        
+    
+    
+            marker_4f7b1c579de9db2c436d607d55c9c3f3.bindTooltip(
+                `<div>
+                     King's Cross Station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4f7b1c579de9db2c436d607d55c9c3f3.setIcon(icon_daa25d827fdf2ef1df2f68e3ca1b7ebf);
+            
+</script>
+</html>
